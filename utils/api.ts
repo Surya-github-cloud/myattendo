@@ -9,7 +9,8 @@ const getBaseURL = () => {
       return 'http://localhost:5001/api';
     } else {
       // Production - use the deployed backend URL
-      return 'https://myattendo-i4fr42k4q-surya-github-clouds-projects.vercel.app';
+      return 'myattendo.vercel.app';
+
     }
   }
   // Server-side (for SSR)
