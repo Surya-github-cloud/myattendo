@@ -9,7 +9,7 @@ const getBaseURL = () => {
       return 'http://localhost:5001/api';
     } else {
       // Production - use the deployed backend URL
-      return 'https://your-backend-url.com/api';
+      return 'myattendo.vercel.app/api';
     }
   }
   // Server-side (for SSR)
