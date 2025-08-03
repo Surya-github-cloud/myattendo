@@ -27,8 +27,15 @@ connectDB();
 
 const app = express();
 
+// CORS configuration
+const corsOptions = {
+  origin: ['https://myattendo.vercel.app', 'http://localhost:3000', 'https://myattendo-i4fr42k4q-surya-github-clouds-projects.vercel.app'],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
 // CORS and JSON middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // API routes
