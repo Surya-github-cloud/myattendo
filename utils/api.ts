@@ -8,8 +8,8 @@ const getBaseURL = () => {
     if (process.env.NODE_ENV === 'development') {
       return 'http://localhost:5001/api';
     } else {
-      // Production - use the same origin as the frontend
-      return '/api';
+      // Production - use the deployed backend URL
+      return 'https://your-backend-url.com/api';
     }
   }
   // Server-side (for SSR)
